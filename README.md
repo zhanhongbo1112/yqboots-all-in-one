@@ -33,6 +33,39 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  </thead>
  <tbody>
  <tr>
+ <td>Home Page</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ </tr>
+ <tr>
+ <td>YQBoots Framework Page</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ </tr>
+ <tr>
+ <td>YQBoots Project Initializer Page</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ </tr>
+ <tr>
  <td>Data Dict Management</td>
  <td>N</td>
  <td>N</td>
