@@ -1,6 +1,6 @@
-# yqboots-all-in-one
-All yqboots projects in one site, for demo.
+# YQBoots All in One
+All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots.com) for the live demo.
 
-# integrated projects
---YQBoots Framework[https://github.com/zhanhongbo1112/yqboots-framework]
---YQBoots Project Initializer[https://github.com/zhanhongbo1112/yqboots-project-initializer]
+# Integrated projects
+* [YQBoots Framework](https://github.com/zhanhongbo1112/yqboots-framework)
+* [YQBoots Project Initializer](https://github.com/zhanhongbo1112/yqboots-project-initializer)
