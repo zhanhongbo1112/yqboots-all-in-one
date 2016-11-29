@@ -6,10 +6,13 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
 * [YQBoots Project Initializer](https://github.com/zhanhongbo1112/yqboots-project-initializer)
 
 ## How to Sign in
+
 ### Sign in
 * user/password, which is the normal user, who has the basic permissions.
 * admin/password, which is the supervisor, who has the most powerful permissions.
+
 ### Permission Matrix
+
 <table style="width: 100%">
  <thead>
  <tr>
@@ -22,12 +25,10 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <th>write</th>
  <th>create</th>
  <th>delete</th>
- <th>administration</th>
  <th>read</th>
  <th>write</th>
  <th>create</th>
  <th>delete</th>
- <th>administration</th>
  </tr>
  </thead>
  <tbody>
@@ -37,8 +38,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -50,8 +49,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -63,8 +60,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -76,8 +71,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -89,8 +82,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -102,8 +93,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -115,8 +104,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -128,8 +115,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -141,8 +126,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
@@ -154,8 +137,6 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N</td>
  <td>N</td>
  <td>N</td>
- <td>N</td>
- <td>Y</td>
  <td>Y</td>
  <td>Y</td>
  <td>Y</td>
