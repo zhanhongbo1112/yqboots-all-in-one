@@ -21,18 +21,19 @@ INSERT INTO SEC_USER_GROUPS (USER_ID, GROUP_ID) VALUES (2, 1);
 INSERT INTO SEC_GROUP_ROLES (GROUP_ID, ROLE_ID) VALUES (2, 2);
 INSERT INTO SEC_GROUP_ROLES (GROUP_ID, ROLE_ID) VALUES (1, 1);
 
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('PROJECTS_FRAMEWORK', '/projects/framework', 'PROJECTS', 'OPEN_SOURCE');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('PROJECTS_INITIALIZER', '/projects/initializer', 'PROJECTS', 'OPEN_SOURCE');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('DATA_DICT', '/dict', 'ADMINISTRATION', 'ENVIRONMENT');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('MENU_ITEM', '/menu', 'ADMINISTRATION', 'ENVIRONMENT');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('FSS', '/fss', 'ADMINISTRATION', 'ENVIRONMENT');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_USER', '/security/user', 'ADMINISTRATION', 'SECURITY');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_GROUP', '/security/group', 'ADMINISTRATION', 'SECURITY');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_ROLE', '/security/role', 'ADMINISTRATION', 'SECURITY');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_PERMISSION', '/security/permission', 'ADMINISTRATION', 'SECURITY');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_AUDIT', '/security/audit', 'ADMINISTRATION', 'SECURITY');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_LOGIN_HISTORY', '/security/history', 'ADMINISTRATION', 'SECURITY');
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP) VALUES ('SECURITY_SESSION', '/security/session', 'ADMINISTRATION', 'SECURITY');
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('PROJECTS_FRAMEWORK', '/projects/framework', 'PROJECTS', 'OPEN_SOURCE', 1);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('PROJECTS_INITIALIZER', '/projects/initializer', 'PROJECTS', 'OPEN_SOURCE', 2);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('PROJECTS_ACTUATOR', '/projects/actuator', 'PROJECTS', 'OPEN_SOURCE', 3);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('DATA_DICT', '/dict', 'ADMINISTRATION', 'ENVIRONMENT', 1);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('MENU_ITEM', '/menu', 'ADMINISTRATION', 'ENVIRONMENT', 2);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FSS', '/fss', 'ADMINISTRATION', 'ENVIRONMENT',3);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_USER', '/security/user', 'ADMINISTRATION', 'SECURITY', 10);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_GROUP', '/security/group', 'ADMINISTRATION', 'SECURITY', 11);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_ROLE', '/security/role', 'ADMINISTRATION', 'SECURITY', 12);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_PERMISSION', '/security/permission', 'ADMINISTRATION', 'SECURITY', 13);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_AUDIT', '/security/audit', 'ADMINISTRATION', 'SECURITY', 14);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_LOGIN_HISTORY', '/security/history', 'ADMINISTRATION', 'SECURITY', 15);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_SESSION', '/security/session', 'ADMINISTRATION', 'SECURITY', 16);
 
 insert into acl_sid (id, principal, sid) values (100, FALSE, '/USER');
 insert into acl_sid (id, principal, sid) values (101, FALSE, '/USER/ADMIN');
@@ -46,6 +47,9 @@ insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, 
 -- -851032196 (hash code of '/projects/initializer')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (3, 100, -851032196, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (3, 3, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 1854300063 (hash code of '/projects/actuator')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (4, 100, 1854300063, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (4, 4, 1, 100, 1, TRUE, FALSE, FALSE);
 -- 46753294 (hash code of '/menu')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (100, 100, 46753294, null, 101, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (100, 100, 1, 101, 1, TRUE, FALSE, FALSE);
@@ -145,6 +149,7 @@ insert into PRJ_DATA_DICT (name, text, value, description) values ('FSS_AVAILABL
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/', '47', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/framework', '1665790232', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/initializer', '-851032196', 'For Object Id Identity in Permission');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/actuator', '1854300063', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/menu', '46753294', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/dict', '46488677', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/fss', '1501879', 'For Object Id Identity in Permission');

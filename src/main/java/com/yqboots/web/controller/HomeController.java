@@ -57,4 +57,10 @@ public class HomeController {
     public String initializer() {
         return "projects/initializer/index";
     }
+
+    @PreAuthorize("hasPermission('/projects/actuator', 'com.yqboots.menu.core.MenuItem', 'READ')")
+    @RequestMapping(value = "/projects/actuator")
+    public String actuator() {
+        return "projects/actuator/index";
+    }
 }

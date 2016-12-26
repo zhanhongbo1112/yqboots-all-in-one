@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/xhtml" layout:decorator="layouts/layout">
+<head>
+  <title th:text="#{ACT0010}">YQBoots Actuator</title>
+</head>
+<body>
+<div layout:fragment="breadcrumbs">
+  <div class="jumbotron">
+    <a href="https://github.com/zhanhongbo1112/yqboots-actuator" target="_blank">
+      <img class="fa-code-fork"
+           data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
+           src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
+           alt="Fork me on GitHub"/>
+    </a>
+
+    <div class="container">
+      <h2>YQBoots Actuator</h2>
+
+      <p>YQBoots Actuator does the health checking and metrics analysing to the <a href="https://www.spring.io/spring-boot">Spring Boot</a>
+        which enables the actuator features..
+      </p>
+    </div>
+  </div>
+</div>
+<div class="content content-md height-600" layout:fragment="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="headline">
+          <h2 id="features">Features</h2>
+
+          <p>The YQBoots Actuator uses an excel file to gather IT requirements in the
+            pre-defined pattern, and then generates the most common parts of the project, including:
+          </p>
+          <ul>
+            <li>Data Dictionaries - It defines all the data dictionaries, which are used in the project.</li>
+            <li>Menus - It defines the menus which control the entrance for each management pages.</li>
+            <li>Messages - It defines all the I18N messages for multi-language support.</li>
+            <li>System Properties - It defines all the properties used in the project for different environments.</li>
+            <li>Domains - It defines all the domains and its data structure, then generates their management and form page, also the CRUD functions.</li>
+          </ul>
+
+          <p>It also generates the initial SQL scripts and log files.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-u">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="icon-list"></i> Releases</h3>
+          </div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>Release</th>
+                <th>Release Date</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1.0.0<span class="badge badge-u">New</span></td>
+                <td>2016-12-01</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr/>
+        <div class="panel panel-u">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="icon-note"></i> Quick Start Guide</h3>
+          </div>
+          <div class="panel-body">
+            <ol>
+              <li>Fork the <a href="https://github.com/zhanhongbo1112/yqboots-framework" target="_blank"><code>YQBoots Framework</code></a></li>
+              <li>Fork the <a href="https://github.com/zhanhongbo1112/yqboots-project-initializer" target="_blank"><code>YQBoots Project Initializer</code></a></li>
+              <li>Run Maven build <code>spring-boot:run</code> to the project</li>
+              <li>Open URL: http://localhost:8080</li>
+              <li>Import the Excel file from <code title="src/test/resources/com/yqboots/initializer/core/">workbook.xlsx</code></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
