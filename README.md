@@ -66,6 +66,17 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>N/A</td>
  </tr>
  <tr>
+ <td>YQBoots Actuator Page</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ </tr>
+ <tr>
  <td>Data Dict Management</td>
  <td>N</td>
  <td>N</td>
@@ -166,6 +177,17 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  </tr>
  <tr>
  <td>Session Management</td>
+ <td>N</td>
+ <td>N</td>
+ <td>N</td>
+ <td>N</td>
+ <td>Y</td>
+ <td>Y</td>
+ <td>Y</td>
+ <td>Y</td>
+ </tr>
+ <tr>
+ <td>YQBoots Actuator Dashboard</td>
  <td>N</td>
  <td>N</td>
  <td>N</td>
