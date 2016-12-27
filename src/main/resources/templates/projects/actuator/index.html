@@ -17,8 +17,8 @@
     <div class="container">
       <h2>YQBoots Actuator</h2>
 
-      <p>YQBoots Actuator does the health checking and metrics analysing to the <a href="https://www.spring.io/spring-boot">Spring Boot</a>
-        which enables the actuator features..
+      <p>YQBoots Actuator does the health checking and metrics analysing to the Spring MVC-based application
+        which enables the actuator features in <a href="https://www.spring.io/spring-boot">Spring Boot</a>.
       </p>
     </div>
   </div>
@@ -30,18 +30,36 @@
         <div class="headline">
           <h2 id="features">Features</h2>
 
-          <p>The YQBoots Actuator uses an excel file to gather IT requirements in the
-            pre-defined pattern, and then generates the most common parts of the project, including:
+          <p><a href="https://www.spring.io/spring-boot">Spring Boot</a> includes a number of additional features to
+            help you monitor and manage your application when it’s pushed to production.
+            You can choose to manage and monitor your application using HTTP endpoints, with JMX or even by remote shell
+            (SSH or Telnet). Auditing, health and metrics gathering can be automatically applied to your application.
           </p>
-          <ul>
-            <li>Data Dictionaries - It defines all the data dictionaries, which are used in the project.</li>
-            <li>Menus - It defines the menus which control the entrance for each management pages.</li>
-            <li>Messages - It defines all the I18N messages for multi-language support.</li>
-            <li>System Properties - It defines all the properties used in the project for different environments.</li>
-            <li>Domains - It defines all the domains and its data structure, then generates their management and form page, also the CRUD functions.</li>
-          </ul>
 
-          <p>It also generates the initial SQL scripts and log files.</p>
+          <p>YQBoots Actuator brings the UI screen of the <a href="https://www.spring.io/spring-boot">Spring Boot</a>
+            HTTP endpoints, you can view the health status of the Web, Database, Memory, Disk, etc. Also it uses a timer
+            (5 Seconds) to refresh the latest status of the detailed application.</p>
+
+          <p>Further more, you can register more applications which enable the actuator features of <a
+            href="https://www.spring.io/spring-boot">Spring Boot</a></p>
+
+          <p>YQBoots Actuator enables the following endpoints:</p>
+          <ul>
+            <li>Application Information - Displays arbitrary application info.</li>
+            <li>Health - Shows application health information (when the application is secure, a simple "status" when
+              accessed over an unauthenticated connection or full message details when authenticated).
+            </li>
+            <li>Metrics - Shows "metrics" information for the current application.</li>
+            <li>Environments - Exposes properties from Spring's <code>ConfigurableEnvironment</code>.</li>
+            <li>Config Properties - Displays a collated list of all <code>@ConfigurationProperties</code>.</li>
+            <li>Mappings - Displays a collated list of all <code>@RequestMapping</code> paths.</li>
+            <li>Beans - Displays a complete list of all the Spring beans in your application.</li>
+            <li>Auto Configuration - Displays an auto-configuration report showing all autoconfiguration candidates
+              and the reason why they "were" or "were not" applied.
+            </li>
+            <li>Trace - Displays trace information (by default the last 100 HTTP requests).</li>
+            <li>Dump - Performs a thread dump.</li>
+          </ul>
         </div>
       </div>
       <div class="col-md-4">
@@ -60,7 +78,7 @@
               <tbody>
               <tr>
                 <td>1.0.0<span class="badge badge-u">New</span></td>
-                <td>2016-12-01</td>
+                <td>2017-01-01</td>
               </tr>
               </tbody>
             </table>
@@ -73,11 +91,12 @@
           </div>
           <div class="panel-body">
             <ol>
-              <li>Fork the <a href="https://github.com/zhanhongbo1112/yqboots-framework" target="_blank"><code>YQBoots Framework</code></a></li>
-              <li>Fork the <a href="https://github.com/zhanhongbo1112/yqboots-project-initializer" target="_blank"><code>YQBoots Project Initializer</code></a></li>
+              <li>Fork the <a href="https://github.com/zhanhongbo1112/yqboots-framework" target="_blank"><code>YQBoots
+                Framework</code></a></li>
+              <li>Fork the <a href="https://github.com/zhanhongbo1112/yqboots-actuator"
+                              target="_blank"><code>YQBoots Actuator</code></a></li>
               <li>Run Maven build <code>spring-boot:run</code> to the project</li>
               <li>Open URL: http://localhost:8080</li>
-              <li>Import the Excel file from <code title="src/test/resources/com/yqboots/initializer/core/">workbook.xlsx</code></li>
             </ol>
           </div>
         </div>
