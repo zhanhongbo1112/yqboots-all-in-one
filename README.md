@@ -4,6 +4,7 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
 ## Integrated projects
 * [YQBoots Framework](https://github.com/zhanhongbo1112/yqboots-framework)
 * [YQBoots Project Initializer](https://github.com/zhanhongbo1112/yqboots-project-initializer)
+* [YQBoots Actuator](https://github.com/zhanhongbo1112/yqboots-actuator)
 
 ## How to Sign in
 
@@ -56,6 +57,17 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  </tr>
  <tr>
  <td>YQBoots Project Initializer Page</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>Y</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ <td>N/A</td>
+ </tr>
+ <tr>
+ <td>YQBoots Actuator Page</td>
  <td>Y</td>
  <td>N/A</td>
  <td>N/A</td>
@@ -166,6 +178,17 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  </tr>
  <tr>
  <td>Session Management</td>
+ <td>N</td>
+ <td>N</td>
+ <td>N</td>
+ <td>N</td>
+ <td>Y</td>
+ <td>Y</td>
+ <td>Y</td>
+ <td>Y</td>
+ </tr>
+ <tr>
+ <td>YQBoots Actuator Dashboard</td>
  <td>N</td>
  <td>N</td>
  <td>N</td>
