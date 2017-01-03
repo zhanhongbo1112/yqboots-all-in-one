@@ -18,7 +18,7 @@
     <properties>
         <java.version>1.8</java.version>
         <yqboots.version>1.2.0</yqboots.version>
-        <yqboots.initializer.version>1.0.0</yqboots.initializer.version>
+        <yqboots.initializer.version>1.0.1</yqboots.initializer.version>
         <yqboots.actuator.version>1.0.0</yqboots.actuator.version>
         <site.url>https://github.com/zhanhongbo1112</site.url>
     </properties>
