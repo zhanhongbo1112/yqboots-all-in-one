@@ -151,6 +151,13 @@ insert into PRJ_DATA_DICT (name, text, value, description) values ('THEME_COLOR_
 insert into PRJ_DATA_DICT (name, text, value, description) values ('THEME_COLOR', 'Teal', 'TEAL', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('THEME_COLOR_zh_CN', '鸭绿色', 'TEAL', '');
 
+insert into PRJ_DATA_DICT (name, text, value, description) values ('SUPPORTED_LOCALES', 'ENGLISH', 'en', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('SUPPORTED_LOCALES', 'CHINESE', 'zh_CN', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('SUPPORTED_LOCALES_en', 'ENGLISH', 'en', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('SUPPORTED_LOCALES_en', 'CHINESE', 'zh_CN', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('SUPPORTED_LOCALES_zh_CN', '英语', 'en', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('SUPPORTED_LOCALES_zh_CN', '中文', 'zh_CN', '');
+
 insert into PRJ_DATA_DICT (name, text, value, description) values ('FSS_AVAILABLE_DIRS', '/dict', '/dict', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('FSS_AVAILABLE_DIRS', '/menu', '/menu', '');
 
