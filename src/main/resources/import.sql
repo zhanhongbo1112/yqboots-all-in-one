@@ -36,6 +36,9 @@ INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORD
 INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('SECURITY_SESSION', '/security/session', 'ADMINISTRATION', 'SECURITY', 16);
 INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('ACTUATOR_APPLICATION', '/actuator/application', 'ADMINISTRATION', 'ACTUATOR', 16);
 
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TIMELINE_V01', '/features/timeline/v01', 'FEATURES', 'TIMELINE', 1);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TIMELINE_V02', '/features/timeline/v02', 'FEATURES', 'TIMELINE', 2);
+
 insert into acl_sid (id, principal, sid) values (100, FALSE, '/USER');
 insert into acl_sid (id, principal, sid) values (101, FALSE, '/USER/ADMIN');
 insert into acl_class (id, class) values (100, 'com.yqboots.menu.core.MenuItem');
@@ -51,6 +54,12 @@ insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, 
 -- 1854300063 (hash code of '/projects/actuator')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (4, 100, 1854300063, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (4, 4, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 1983120876 (hash code of '/features/timeline/v01')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (5, 100, 1983120876, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (5, 5, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 1983120877 (hash code of '/features/timeline/v02')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (6, 100, 1983120877, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (6, 6, 1, 100, 1, TRUE, FALSE, FALSE);
 -- 46753294 (hash code of '/menu')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (100, 100, 46753294, null, 101, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (100, 100, 1, 101, 1, TRUE, FALSE, FALSE);
@@ -165,6 +174,8 @@ insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_O
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/framework', '1665790232', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/initializer', '-851032196', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/actuator', '1854300063', 'For Object Id Identity in Permission');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/timeline/v01', '1983120876', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/timeline/v02', '1983120877', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/menu', '46753294', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/dict', '46488677', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/fss', '1501879', 'For Object Id Identity in Permission');
