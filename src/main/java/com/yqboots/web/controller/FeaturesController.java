@@ -20,4 +20,24 @@ public class FeaturesController {
     public String timelineV02() {
         return "features/timeline/v02/index";
     }
+
+    @RequestMapping(value = "/features/thumbnails/v01")
+    public String thumbnailsV01() {
+        return "features/thumbnails/v01/index";
+    }
+
+    @RequestMapping(value = "/features/thumbnails/v02")
+    public String thumbnailsV02() {
+        return "features/thumbnails/v02/index";
+    }
+
+    @RequestMapping(value = "/features/thumbnails/v03")
+    public String thumbnailsV03() {
+        return "features/thumbnails/v03/index";
+    }
+
+    @RequestMapping(value = "/features/thumbnails/v04")
+    public String thumbnailsV04() {
+        return "features/thumbnails/v04/index";
+    }
 }

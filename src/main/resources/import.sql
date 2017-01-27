@@ -38,6 +38,10 @@ INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORD
 
 INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TIMELINE_V01', '/features/timeline/v01', 'FEATURES', 'TIMELINE', 1);
 INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TIMELINE_V02', '/features/timeline/v02', 'FEATURES', 'TIMELINE', 2);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V01', '/features/thumbnails/v01', 'FEATURES', 'THUMBNAILS', 3);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V02', '/features/thumbnails/v02', 'FEATURES', 'THUMBNAILS', 4);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V03', '/features/thumbnails/v03', 'FEATURES', 'THUMBNAILS', 5);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V04', '/features/thumbnails/v04', 'FEATURES', 'THUMBNAILS', 6);
 
 insert into acl_sid (id, principal, sid) values (100, FALSE, '/USER');
 insert into acl_sid (id, principal, sid) values (101, FALSE, '/USER/ADMIN');
@@ -60,6 +64,18 @@ insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, 
 -- 1983120877 (hash code of '/features/timeline/v02')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (6, 100, 1983120877, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (6, 6, 1, 100, 1, TRUE, FALSE, FALSE);
+-- -16169230 (hash code of '/features/thumbnails/v01')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (7, 100, -16169230, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (7, 7, 1, 100, 1, TRUE, FALSE, FALSE);
+-- -16169229 (hash code of '/features/thumbnails/v02')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (8, 100, -16169229, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (8, 8, 1, 100, 1, TRUE, FALSE, FALSE);
+-- -16169228 (hash code of '/features/thumbnails/v03')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (9, 100, -16169228, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (9, 9, 1, 100, 1, TRUE, FALSE, FALSE);
+-- -16169227 (hash code of '/features/thumbnails/v04')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (10, 100, -16169227, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (10, 10, 1, 100, 1, TRUE, FALSE, FALSE);
 -- 46753294 (hash code of '/menu')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (100, 100, 46753294, null, 101, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (100, 100, 1, 101, 1, TRUE, FALSE, FALSE);
@@ -176,6 +192,10 @@ insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_O
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/actuator', '1854300063', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/timeline/v01', '1983120876', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/timeline/v02', '1983120877', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v01', '-16169230', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v02', '-16169229', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v03', '-16169228', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v04', '-16169227', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/menu', '46753294', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/dict', '46488677', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/fss', '1501879', 'For Object Id Identity in Permission');
