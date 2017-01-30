@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:yq="http://www.yqboots.com" xmlns="http://www.w3.org/1999/xhtml" layout:decorator="layouts/layout">
+<head>
+  <title>Testimonial v05</title>
+  <link rel="stylesheet" th:href="@{/theme/css/features/testimonial/testimonial-v5.css}"/>
+</head>
+<body>
+<div layout:fragment="breadcrumbs">
+  <yq:breadcrumbs menu="FEATURES_TESTIMONIAL_V05"/>
+</div>
+<div class="content content-md height-600" layout:fragment="content">
+  <div class="flat-testimonials bg-image-v1 parallaxBg">
+    <div class="container">
+      <div class="headline-center headline-light margin-bottom-60">
+        <h2>What People Are Saying</h2>
+
+        <p>Integer odio ligula, tincidunt id volutpat et, imperdiet eget mi. Quisque laoreet porttitor turpis sed <a
+          href="#">fermentum</a>. Nullam sodales blandit nisi, tristique tempor nunc hendrerit at. Sed posuere mollis
+          orci</p>
+      </div>
+      <!--/end Headline Center-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="flat-testimonials-in md-margin-bottom-50">
+            <img class="rounded-x img-responsive" th:src="@{/theme/img/team/img1-sm.jpg}"/>
+
+            <h3>Anthony Connor</h3>
+            <span class="color-green">Software Developer</span>
+
+            <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum mi interduml</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="flat-testimonials-in md-margin-bottom-50">
+            <img class="rounded-x img-responsive" th:src="@{/theme/img/team/img2-sm.jpg}"/>
+
+            <h3>Angela Danil</h3>
+            <span class="color-green">Web Designer</span>
+
+            <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum mi interduml</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="flat-testimonials-in">
+            <img class="rounded-x img-responsive" th:src="@{/theme/img/team/img3-sm.jpg}"/>
+
+            <h3>Anthony Connor</h3>
+            <span class="color-green">Software Developer</span>
+
+            <p>Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum mi interduml</p>
+          </div>
+        </div>
+      </div>
+      <!--/end row-->
+    </div>
+    <!--/end container-->
+  </div>
+</div>
+</body>
+</html>

@@ -9,27 +9,33 @@ package com.yqboots.util;
 public class HashCodeGenerator {
     public static void main(String[] args) {
        /* System.out.println("/features/timeline/v01".hashCode());
-        System.out.println("/features/timeline/v02".hashCode());*/
-        System.out.println("/features/thumbnails/v01".hashCode());
-        System.out.println("/features/thumbnails/v02".hashCode());
-        System.out.println("/features/thumbnails/v03".hashCode());
-        System.out.println("/features/thumbnails/v04".hashCode());
+        System.out.println("/features/timeline/v02".hashCode());
+        System.out.println("/features/thumbnail/v01".hashCode());
+        System.out.println("/features/thumbnail/v02".hashCode());
+        System.out.println("/features/thumbnail/v03".hashCode());
+        System.out.println("/features/thumbnail/v04".hashCode());*/
+        System.out.println("/features/testimonial/v01".hashCode());
+        System.out.println("/features/testimonial/v02".hashCode());
+        System.out.println("/features/testimonial/v03".hashCode());
+        System.out.println("/features/testimonial/v04".hashCode());
+        System.out.println("/features/testimonial/v05".hashCode());
+        System.out.println("/features/testimonial/v06".hashCode());
         /**
-        System.out.println("/".hashCode());
-        System.out.println("/projects/framework".hashCode());
-        System.out.println("/projects/initializer".hashCode());
-        System.out.println("/projects/actuator".hashCode());
-        System.out.println("/menu".hashCode());
-        System.out.println("/dict".hashCode());
-        System.out.println("/fss".hashCode());
-        System.out.println("/security/user".hashCode());
-        System.out.println("/security/group".hashCode());
-        System.out.println("/security/role".hashCode());
-        System.out.println("/security/permission".hashCode());
-        System.out.println("/security/audit".hashCode());
-        System.out.println("/security/history".hashCode());
-        System.out.println("/security/session".hashCode());
-        System.out.println("/actuator/application".hashCode());
+         System.out.println("/".hashCode());
+         System.out.println("/projects/framework".hashCode());
+         System.out.println("/projects/initializer".hashCode());
+         System.out.println("/projects/actuator".hashCode());
+         System.out.println("/menu".hashCode());
+         System.out.println("/dict".hashCode());
+         System.out.println("/fss".hashCode());
+         System.out.println("/security/user".hashCode());
+         System.out.println("/security/group".hashCode());
+         System.out.println("/security/role".hashCode());
+         System.out.println("/security/permission".hashCode());
+         System.out.println("/security/audit".hashCode());
+         System.out.println("/security/history".hashCode());
+         System.out.println("/security/session".hashCode());
+         System.out.println("/actuator/application".hashCode());
          */
     }
 }

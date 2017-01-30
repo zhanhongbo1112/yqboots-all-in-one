@@ -38,10 +38,16 @@ INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORD
 
 INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TIMELINE_V01', '/features/timeline/v01', 'FEATURES', 'TIMELINE', 1);
 INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TIMELINE_V02', '/features/timeline/v02', 'FEATURES', 'TIMELINE', 2);
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V01', '/features/thumbnails/v01', 'FEATURES', 'THUMBNAILS', 3);
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V02', '/features/thumbnails/v02', 'FEATURES', 'THUMBNAILS', 4);
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V03', '/features/thumbnails/v03', 'FEATURES', 'THUMBNAILS', 5);
-INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAILS_V04', '/features/thumbnails/v04', 'FEATURES', 'THUMBNAILS', 6);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAIL_V01', '/features/thumbnail/v01', 'FEATURES', 'THUMBNAIL', 3);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAIL_V02', '/features/thumbnail/v02', 'FEATURES', 'THUMBNAIL', 4);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAIL_V03', '/features/thumbnail/v03', 'FEATURES', 'THUMBNAIL', 5);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_THUMBNAIL_V04', '/features/thumbnail/v04', 'FEATURES', 'THUMBNAIL', 6);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TESTIMONIAL_V01', '/features/testimonial/v01', 'FEATURES', 'TESTIMONIAL', 7);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TESTIMONIAL_V02', '/features/testimonial/v02', 'FEATURES', 'TESTIMONIAL', 8);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TESTIMONIAL_V03', '/features/testimonial/v03', 'FEATURES', 'TESTIMONIAL', 9);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TESTIMONIAL_V04', '/features/testimonial/v04', 'FEATURES', 'TESTIMONIAL', 10);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TESTIMONIAL_V05', '/features/testimonial/v05', 'FEATURES', 'TESTIMONIAL', 11);
+INSERT INTO PRJ_MENUITEM (NAME, URL, MENU_GROUP, MENU_ITEM_GROUP, SEQUENTIAL_ORDER) VALUES ('FEATURES_TESTIMONIAL_V06', '/features/testimonial/v06', 'FEATURES', 'TESTIMONIAL', 12);
 
 insert into acl_sid (id, principal, sid) values (100, FALSE, '/USER');
 insert into acl_sid (id, principal, sid) values (101, FALSE, '/USER/ADMIN');
@@ -64,18 +70,36 @@ insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, 
 -- 1983120877 (hash code of '/features/timeline/v02')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (6, 100, 1983120877, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (6, 6, 1, 100, 1, TRUE, FALSE, FALSE);
--- -16169230 (hash code of '/features/thumbnails/v01')
-insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (7, 100, -16169230, null, 100, FALSE);
+-- 690255345 (hash code of '/features/thumbnail/v01')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (7, 100, 690255345, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (7, 7, 1, 100, 1, TRUE, FALSE, FALSE);
--- -16169229 (hash code of '/features/thumbnails/v02')
-insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (8, 100, -16169229, null, 100, FALSE);
+-- 690255346 (hash code of '/features/thumbnail/v02')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (8, 100, 690255346, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (8, 8, 1, 100, 1, TRUE, FALSE, FALSE);
--- -16169228 (hash code of '/features/thumbnails/v03')
-insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (9, 100, -16169228, null, 100, FALSE);
+-- 690255347 (hash code of '/features/thumbnail/v03')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (9, 100, 690255347, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (9, 9, 1, 100, 1, TRUE, FALSE, FALSE);
--- -16169227 (hash code of '/features/thumbnails/v04')
-insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (10, 100, -16169227, null, 100, FALSE);
+-- 690255348 (hash code of '/features/thumbnail/v04')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (10, 100, 690255348, null, 100, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (10, 10, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 474580196 (hash code of '/features/testimonial/v01')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (11, 100, 474580196, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (11, 11, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 474580197 (hash code of '/features/testimonial/v02')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (12, 100, 474580197, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (12, 12, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 474580198 (hash code of '/features/testimonial/v03')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (13, 100, 474580198, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (13, 13, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 474580199 (hash code of '/features/testimonial/v04')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (14, 100, 474580199, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (14, 14, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 474580200 (hash code of '/features/testimonial/v05')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (15, 100, 474580200, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (15, 15, 1, 100, 1, TRUE, FALSE, FALSE);
+-- 474580201 (hash code of '/features/testimonial/v06')
+insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (16, 100, 474580201, null, 100, FALSE);
+insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (16, 16, 1, 100, 1, TRUE, FALSE, FALSE);
 -- 46753294 (hash code of '/menu')
 insert into acl_object_identity (id, object_id_class, object_id_identity, parent_object, owner_sid, entries_inheriting) values (100, 100, 46753294, null, 101, FALSE);
 insert into acl_entry (id, acl_object_identity, ace_order, sid, mask, granting, audit_success, audit_failure) values (100, 100, 1, 101, 1, TRUE, FALSE, FALSE);
@@ -192,10 +216,16 @@ insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_O
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/projects/actuator', '1854300063', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/timeline/v01', '1983120876', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/timeline/v02', '1983120877', '');
-insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v01', '-16169230', '');
-insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v02', '-16169229', '');
-insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v03', '-16169228', '');
-insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnails/v04', '-16169227', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnail/v01', '690255345', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnail/v02', '690255346', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnail/v03', '690255347', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/thumbnail/v04', '690255348', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/testimonial/v01', '474580196', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/testimonial/v02', '474580197', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/testimonial/v03', '474580198', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/testimonial/v04', '474580199', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/testimonial/v05', '474580200', '');
+insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/features/testimonial/v06', '474580201', '');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/menu', '46753294', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/dict', '46488677', 'For Object Id Identity in Permission');
 insert into PRJ_DATA_DICT (name, text, value, description) values ('PERMISSION_OBJECT_ID_IDENTITY', '/fss', '1501879', 'For Object Id Identity in Permission');
