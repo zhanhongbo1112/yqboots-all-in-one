@@ -8,18 +8,6 @@ package com.yqboots.util;
  */
 public class HashCodeGenerator {
     public static void main(String[] args) {
-       /* System.out.println("/features/timeline/v01".hashCode());
-        System.out.println("/features/timeline/v02".hashCode());
-        System.out.println("/features/thumbnail/v01".hashCode());
-        System.out.println("/features/thumbnail/v02".hashCode());
-        System.out.println("/features/thumbnail/v03".hashCode());
-        System.out.println("/features/thumbnail/v04".hashCode());*/
-        System.out.println("/features/testimonial/v01".hashCode());
-        System.out.println("/features/testimonial/v02".hashCode());
-        System.out.println("/features/testimonial/v03".hashCode());
-        System.out.println("/features/testimonial/v04".hashCode());
-        System.out.println("/features/testimonial/v05".hashCode());
-        System.out.println("/features/testimonial/v06".hashCode());
         /**
          System.out.println("/".hashCode());
          System.out.println("/projects/framework".hashCode());
