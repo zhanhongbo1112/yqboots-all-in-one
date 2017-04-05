@@ -198,5 +198,16 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
  <td>Y</td>
  <td>Y</td>
  </tr>
+ <tr>
+  <td>YQBoots Showcase Pages</td>
+  <td>Y</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>Y</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  </tr>
  </tbody>
 </table>
