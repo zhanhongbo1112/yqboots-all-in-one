@@ -5,6 +5,7 @@ All YQBoots projects in one site. Please visit [YQBoots Site](http://www.yqboots
 * [YQBoots Framework](https://github.com/zhanhongbo1112/yqboots-framework)
 * [YQBoots Project Initializer](https://github.com/zhanhongbo1112/yqboots-project-initializer)
 * [YQBoots Actuator](https://github.com/zhanhongbo1112/yqboots-actuator)
+* [YQBoots Showcase](https://github.com/zhanhongbo1112/yqboots-showcase)
 
 ## How to Sign in
 
